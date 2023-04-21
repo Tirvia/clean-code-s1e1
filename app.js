@@ -8,15 +8,14 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
+var taskInput=document.getElementById("block-add__new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("block-incomplete");//ul of #incompleteTasks
+var completedTasksHolder=document.getElementById("block-complete");//completed-tasks
 
 
 //New task list item
 var createNewTaskElement=function(taskString){
-
   var listItem=document.createElement("li");
 
   //input (checkbox)
@@ -33,12 +32,12 @@ var createNewTaskElement=function(taskString){
   var deleteButtonImg=document.createElement("img");//delete button image
 
   label.innerText=taskString;
-  label.className='task';
+  label.className='block__task';
 
   //Each elements, needs appending
   checkBox.type="checkbox";
   editInput.type="text";
-  editInput.className="task";
+  editInput.className="block__task";
 
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
   editButton.className="edit";
@@ -85,21 +84,21 @@ var editTask=function(){
   var editInput=listItem.querySelector('input[type=text]');
   var label=listItem.querySelector("label");
   var editBtn=listItem.querySelector(".edit");
-  var containsClass=listItem.classList.contains("editMode");
+  var containsClass=listItem.classList.contains("block-incomplete__tasks");
   //If class of the parent is .editmode
   if(containsClass){
 
-  //switch to .editmode
-  //label becomes the inputs value.
-  label.innerText=editInput.value;
-  editBtn.innerText="Edit";
+    //switch to .editmode
+    //label becomes the inputs value.
+    label.innerText=editInput.value;
+    editBtn.innerText="Edit";
   }else{
-  editInput.value=label.innerText;
-  editBtn.innerText="Save";
+    editInput.value=label.innerText;
+    editBtn.innerText="Save";
   }
 
   //toggle .editmode on the parent.
-  listItem.classList.toggle("editMode");
+  listItem.classList.toggle("block-incomplete__tasks");
 };
 
 
