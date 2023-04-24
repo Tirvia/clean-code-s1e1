@@ -2,21 +2,21 @@
   background-color: #f8f8f8;
   color: #333;
   font-family: "Lato", sans-serif;
-}
-
-.instruction {
   width: 500px;
   margin: 0 auto;
+}
+
+.main-instruction {
   display: block;
   text-align: right;
 }
 
-.instruction img {
+.main-instruction img {
   width: 100%;
   margin-bottom: -3px;
 }
 
-.instruction .main-instruction__details {
+.main-instruction .main-instruction__details {
   font-family: fantasy, cursive;
 }
 
