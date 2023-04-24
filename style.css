@@ -16,7 +16,7 @@
   margin-bottom: -3px;
 }
 
-.instruction .instruction-details {
+.instruction .main-instruction__details {
   font-family: fantasy, cursive;
 }
 
@@ -65,7 +65,7 @@ button:hover {
   color: #3a3A3a;
 }   
 
-.main-text, 
+.section-text, 
 label[for='block-add__new-task'] {
   color: #333;
   font-weight: 700;
@@ -155,7 +155,7 @@ ul li.block-incomplete__tasks label {
 
 @media (max-width:768px) {
 
-  .instruction { 
+  .main-instruction { 
     text-align: center;
   }
 
