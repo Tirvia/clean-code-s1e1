@@ -32,7 +32,7 @@ var createNewTaskElement=function(taskString){
   var deleteButtonImg=document.createElement("img");//delete button image
 
   label.innerText=taskString;
-  label.className='block__task';
+  label.className=" block__task";
 
   //Each elements, needs appending
   checkBox.type="checkbox";
@@ -40,10 +40,10 @@ var createNewTaskElement=function(taskString){
   editInput.className="block__task";
 
   editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className="edit";
+  editButton.className="block__button_edit";
 
-  deleteButton.className="delete";
-  deleteButtonImg.src='./remove.svg';
+  deleteButton.className="block__button_delete";
+  deleteButtonImg.src="./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
 
@@ -81,12 +81,12 @@ var editTask=function(){
 
   var listItem=this.parentNode;
 
-  var editInput=listItem.querySelector('input[type=text]');
+  var editInput=listItem.querySelector("input[type=text]");
   var label=listItem.querySelector("label");
-  var editBtn=listItem.querySelector(".edit");
+  var editBtn=listItem.querySelector(".block__button_edit");
   var containsClass=listItem.classList.contains("block-incomplete__tasks");
   //If class of the parent is .editmode
-  if(containsClass){
+  if(containsClass){  
 
     //switch to .editmode
     //label becomes the inputs value.
@@ -155,8 +155,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
   console.log("bind list item events");
 //select ListItems children
   var checkBox=taskListItem.querySelector("input[type=checkbox]");
-  var editButton=taskListItem.querySelector("button.edit");
-  var deleteButton=taskListItem.querySelector("button.delete");
+  var editButton=taskListItem.querySelector("button.block__button_edit");
+  var deleteButton=taskListItem.querySelector("button.block__button_delete");
 
 
   //Bind editTask to edit button.
@@ -176,7 +176,7 @@ for (var i=0; i<incompleteTaskHolder.children.length;i++){
 }
 
 
-
+ 
 
 //cycle over completedTasksHolder ul list items
 for (var i=0; i<completedTasksHolder.children.length;i++){
