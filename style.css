@@ -37,7 +37,7 @@
 .block__task {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .block-add__wrapper {
@@ -46,7 +46,7 @@
 }
 
 input,button{
-  outline:none;
+  outline: none;
 }
 
 button {
@@ -119,7 +119,7 @@ li > label {
 }
 
 li >  input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 
 .block__button_delete img {
@@ -138,16 +138,16 @@ ul#block-complete label {
 }
 
 ul li input[type=text] {
-  display:none
+  display: none;
 }
 
 ul li.block-incomplete__tasks input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px;
 }
 
 ul li.block-incomplete__tasks label {
-  display:none;
+  display: none;
 }
 
 @media (max-width:768px) {
