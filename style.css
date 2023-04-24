@@ -30,7 +30,8 @@
   margin: -1px;
 }
 
-.block-add, .block__list {
+.block-add, 
+.block__list {
   padding: 0px;
 }
 
@@ -45,7 +46,8 @@
   margin-bottom: 16px;
 }
 
-input,button{
+input,
+button{
   outline: none;
 }
 
@@ -63,7 +65,8 @@ button:hover {
   color: #3a3A3a;
 }   
 
-.main-text, label[for='block-add__new-task'] {
+.main-text, 
+label[for='block-add__new-task'] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
