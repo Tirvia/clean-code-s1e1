@@ -3,42 +3,52 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .instruction {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .instruction img {
   width: 100%;
   margin-bottom: -3px;
 }
+
 .instruction .instruction-details {
   font-family: fantasy, cursive;
 }
+
 .all-tasks{
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .block__list{
   margin: -1px;
 }
+
 .block-add, .block__list {
   padding: 0px;
 }
+
 .block__task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .block-add__wrapper {
   display: flex;
   margin-bottom: 16px;
 }
+
 input,button{
   outline:none;
 }
+
 button {
   background: none;
   border: 0px;
@@ -48,9 +58,11 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 button:hover {
   color: #3a3A3a;
 }   
+
 .main-text, label[for='block-add__new-task'] {
   color: #333;
   font-weight: 700;
@@ -61,6 +73,7 @@ button:hover {
   max-width: 500px;
   text-transform: uppercase;
 }
+
 .block__task[type="text"] {
   font-size: 18px;
   height: 19px;
@@ -71,13 +84,16 @@ button:hover {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .block__task[type="text"]:focus {
   color: #333;
 }
+
 label[for='block-add__new-task'] {
   display: block;
   margin: 0 0 20px;
 }
+
 li {
   overflow: hidden;
   padding: 21px 0;
@@ -86,6 +102,7 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+
 li > * {
   vertical-align: middle;
 }
@@ -93,20 +110,24 @@ li > * {
 li > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 li > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 li >  input[type="text"] {
   width: 226px
 }
+
 .block__button_delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .block__button_delete img:hover {
   transform: rotateZ(0);
 }
@@ -119,15 +140,20 @@ ul#block-complete label {
 ul li input[type=text] {
   display:none
 }
+
 ul li.block-incomplete__tasks input[type=text] {
   display:inline-block;
   width:224px
 }
+
 ul li.block-incomplete__tasks label {
   display:none;
 }
+
 @media (max-width:768px) {
-    .instruction { 
+
+  .instruction { 
     text-align: center;
   }
+
 }
